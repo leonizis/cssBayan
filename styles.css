@@ -1,5 +1,6 @@
+
 .bayan {
-    margin: 1em 3em;
+    margin: 1em 10em;
 }
 .bayan:hover .icon{
     visibility: visible;
@@ -7,6 +8,9 @@
 .headings{
     display: flex;
     justify-content: space-between;
+}
+.head{
+    width: 35em;
 }
 .icon{
     background-image: url('svg/plus-svgrepo-com.svg');
@@ -16,20 +20,14 @@
     visibility: hidden;
 }
 img{
-    width: 20em;
-    
+    width: 30em;
 }
 
 .bayan .bayan-title {
     margin: 0 auto;
     height: 0;
-    color: rgba(0, 0, 0, 0);
-    line-height: 1em;
-    box-sizing: border-box;
     transition: color 0.5s, padding 0.5s;
     overflow: hidden;
-    font-family: Verdana, sans-serif;
-    font-size: 1em;
     display: flex;
     justify-content:center;
 }
@@ -39,7 +37,7 @@ img{
 }
 .bayan  label {
     cursor: pointer;
-    background-color: #01571b;
+    background-color: #121111;
     display: block;
     padding: 1em 1em;
     width: 100%;
@@ -48,19 +46,19 @@ img{
     box-sizing: border-box;
     z-index: 100;
     font-family: Verdana, sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     margin: 0 0 0.5em;
     transition: color .35s;
 }
 label:hover {
-    color: #db1313;
+    color: #bcbcbc;
 }
 input{
     display: none;
 }
 
 input:checked + label {
-    background-color: #6db614;
+    background-color: #acacac;
     color: #FFF;
 }
 
@@ -104,5 +102,38 @@ input:checked + label .icon {
     margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
+}
+@media (max-width: 1270px) {
+    
+    .bayan {
+        margin: 1em 10em;
+    }
+    .bayan  label {
+
+        font-size: 1em;
+    }
+
+}
+@media (max-width: 819px) {
+    
+    .bayan {
+        margin: 1em 1em;
+    }
+    .bayan  label {
+
+        font-size: 0.8em;
+    }
+
+}
+@media (max-width: 500px) {
+    
+    .bayan {
+        margin: 1em 1em;
+    }
+    .bayan  label {
+
+        font-size: 0.5em;
+    }
+
 }
 
