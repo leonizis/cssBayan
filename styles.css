@@ -126,7 +126,7 @@ input:checked + label .icon {
 
 }
 @media (max-width: 500px) {
-    
+
     .bayan {
         margin: 1em 1em;
     }
