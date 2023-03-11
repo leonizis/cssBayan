@@ -1,0 +1,72 @@
+.bayan {
+    margin: 1em 3em;
+}
+.bayan .bayan-title {
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    line-height: 1em;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+}
+.bayan .bayan-title p {
+    margin: 0 0 1em;
+}
+.bayan label {
+    cursor: pointer;
+    background-color: #01571b;
+    display: block;
+    padding: 1em 1em;
+    width: 100%;
+    color: #fcfcfc;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    margin: 0 0 0.5em;
+    transition: color .35s;
+}
+.bayan label:hover {
+    color: #db1313;
+}
+.bayan input{
+    display: none;
+}
+.bayan label:before {
+    content: '\276F';
+    float: right;
+}
+.bayan input:checked + label {
+    background-color: #6db614;
+    color: #FFF;
+}
+.bayan input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.bayan input:checked + label + .bayan-title {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+.bayan label:hover + input + .bayan-title  {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+
+.bayan label:hover + .bayan-title {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+.bayan .bayan-title:hover {
+    pointer-events: none;
+}
