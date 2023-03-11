@@ -1,0 +1,139 @@
+
+.bayan {
+    margin: 1em 10em;
+}
+.bayan:hover .icon{
+    visibility: visible;
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    width: 35em;
+}
+.icon{
+    background-image: url('svg/plus-svgrepo-com.svg');
+    background-size: cover;
+    width: 3em;
+    height: 3em;
+    visibility: hidden;
+}
+img{
+    width: 30em;
+}
+
+.bayan .bayan-title {
+    margin: 0 auto;
+    height: 0;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+}
+.bayan .bayan-title p {
+    margin: 0 0 1em;
+    cursor: pointer;
+}
+.bayan  label {
+    cursor: pointer;
+    background-color: #121111;
+    display: block;
+    padding: 1em 1em;
+    width: 100%;
+    color: #fcfcfc;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 2em;
+    margin: 0 0 0.5em;
+    transition: color .35s;
+}
+label:hover {
+    color: #bcbcbc;
+}
+input{
+    display: none;
+}
+
+input:checked + label {
+    background-color: #acacac;
+    color: #FFF;
+}
+
+input:checked + label  .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+input:checked + label .icon {
+    background-image: url('svg/cross-svgrepo-com.svg');
+    width: 3em;
+    height: 3em;
+}
+.bayan-1:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+.bayan-2:hover .bayan-title {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+.bayan-3:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+.bayan-4:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+.bayan-5:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+@media (max-width: 1270px) {
+    
+    .bayan {
+        margin: 1em 10em;
+    }
+    .bayan  label {
+
+        font-size: 1em;
+    }
+
+}
+@media (max-width: 819px) {
+    
+    .bayan {
+        margin: 1em 1em;
+    }
+    .bayan  label {
+
+        font-size: 0.8em;
+    }
+
+}
+@media (max-width: 500px) {
+
+    .bayan {
+        margin: 1em 1em;
+    }
+    .bayan  label {
+
+        font-size: 0.5em;
+    }
+
+}
+
