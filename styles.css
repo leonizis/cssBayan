@@ -1,6 +1,25 @@
 .bayan {
     margin: 1em 3em;
 }
+.bayan:hover .icon{
+    visibility: visible;
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    background-image: url('svg/plus-svgrepo-com.svg');
+    background-size: cover;
+    width: 3em;
+    height: 3em;
+    visibility: hidden;
+}
+img{
+    width: 20em;
+    
+}
+
 .bayan .bayan-title {
     margin: 0 auto;
     height: 0;
@@ -11,11 +30,14 @@
     overflow: hidden;
     font-family: Verdana, sans-serif;
     font-size: 1em;
+    display: flex;
+    justify-content:center;
 }
 .bayan .bayan-title p {
     margin: 0 0 1em;
+    cursor: pointer;
 }
-.bayan label {
+.bayan  label {
     cursor: pointer;
     background-color: #01571b;
     display: block;
@@ -30,43 +52,57 @@
     margin: 0 0 0.5em;
     transition: color .35s;
 }
-.bayan label:hover {
+label:hover {
     color: #db1313;
 }
-.bayan input{
+input{
     display: none;
 }
-.bayan label:before {
-    content: '\276F';
-    float: right;
-}
-.bayan input:checked + label {
+
+input:checked + label {
     background-color: #6db614;
     color: #FFF;
 }
-.bayan input:checked + label:before {
-    transition: transform .35s;
-    transform: rotate(90deg);
+
+input:checked + label  .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
 }
-.bayan input:checked + label + .bayan-title {
+input:checked + label .icon {
+    background-image: url('svg/cross-svgrepo-com.svg');
+    width: 3em;
+    height: 3em;
+}
+.bayan-1:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+.bayan-2:hover .bayan-title {
     height: auto;
     margin-top: -5px;
     color: #000;
-    padding: 20px 30px 10px;
+    padding: 1em 2em 1em;
 }
-.bayan label:hover + input + .bayan-title  {
+.bayan-3:hover .bayan-title {
     height: auto;
-    margin-top: -5px;
+    margin-top: -0.5em;
     color: #000;
-    padding: 20px 30px 10px;
+    padding: 1em 2em 1em;
+}
+.bayan-4:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
+}
+.bayan-5:hover .bayan-title {
+    height: auto;
+    margin-top: -0.5em;
+    color: #000;
+    padding: 1em 2em 1em;
 }
 
-.bayan label:hover + .bayan-title {
-    height: auto;
-    margin-top: -5px;
-    color: #000;
-    padding: 20px 30px 10px;
-}
-.bayan .bayan-title:hover {
-    pointer-events: none;
-}
