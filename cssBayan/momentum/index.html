@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <audio src="./assets/sounds/Aqua Caelestis.mp3" class="song"></audio>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="song-title"></div>
+      <div class="progress-bar"></div>
+      <input 
+            type="range" 
+            id="progress-bar" 
+            min="0" 
+            max="" 
+            value="0" 
+            onchange="changeProgressBar()"
+        />
+        
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+        <div class="volume-container">
+          
+          <input class="ran" id="range" min="0" max="100" value="50" type="range">
+          <button class="volume-mute player-icon"></button>     
+        </div>
+        
+       
+
+        
+      <ul class="play-list"></ul>
+    </div>
+    <button id="links-btn">Ссылки</button>
+    <button id="settings-btn">Настройки</button>
+
+  <!-- Основное модальное окно -->
+  <div id="links-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="link-text">Ссылки</h2>
+      <div id="link-list"></div>
+      <button id="add-link-btn">Добавить ссылку</button>
+    </div>
+  </div>
+  
+
+  <!-- Модальное окно для добавления ссылки -->
+  <div id="add-link-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+    <h2 class="add-link">Добавить ссылку</h2>
+    <div class="form-input">
+      <div class="link-name-input">Введите имя:</div>
+      <input id="link-name-input" type="text" />
+    </div>
+    <div class="form-input">
+      <div class="link-url-input">Введите ссылку:</div>
+      <input id="link-url-input" type="text" />
+    </div>
+    <button id="submit-link-btn">Добавить</button>
+  </div>
+</div>
+
+<!-- Основное модальное окно настроек -->
+<div id="settings-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="setting-text">Настройки</h2>
+    <div id="settings-list">
+      <label><input type="checkbox" name="setting1" value="1" checked><span>Отображать аудио-плеер</span></label>
+      <label><input type="checkbox" name="setting2" value="1" checked><span>Отображать погоду</span></label>
+      <label><input type="checkbox" name="setting3" value="1" checked><span>Отображать часы с приветствием</span></label>
+      <label><input type="checkbox" name="setting4" value="1" checked><span>Отображать цитаты</span></label>
+    </div>
+    <h2 class="language-text">Язык / Language</h2>
+    <div class="language">
+      <label><input type="radio" id="rus" name="language" value="russian" checked>Русский</label>
+      <label><input type="radio" id="eng" name="language" value="english">English</label>
+    </div>
+    <button id="save-settings-btn">Сохранить изменения</button>
+  </div>
+</div>
+
+    
+   
+    
+    
+    <div class="weather">
+      <input type="text" class="city" value="Минск"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      
+      <input type="text" class="name" placeholder="Введите имя">
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="player.js"></script>
+  <script src="link.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>
