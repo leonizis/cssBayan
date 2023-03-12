@@ -1,6 +1,6 @@
 
 .bayan {
-    margin: 1em 10em;
+    margin: 1em 25em;
 }
 .bayan:hover .icon{
     visibility: visible;
@@ -10,17 +10,23 @@
     justify-content: space-between;
 }
 .head{
-    width: 35em;
+    width: 25em;
 }
 .icon{
     background-image: url('svg/plus-svgrepo-com.svg');
     background-size: cover;
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 img{
-    width: 20em;
+    width: 13em;
+    width: 0;
+    height: 0;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 .bayan .bayan-title {
@@ -46,17 +52,19 @@ img{
     box-sizing: border-box;
     z-index: 100;
     font-family: Verdana, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0 0 0.5em;
     transition: color .35s;
 }
 label:hover {
     color: #bcbcbc;
 }
+.bayan:hover .icon {
+    opacity: 1;
+}
 input{
     display: none;
 }
-
 input:checked + label {
     background-color: #acacac;
     color: #FFF;
@@ -70,8 +78,12 @@ input:checked + label  .bayan-title {
 }
 input:checked + label .icon {
     background-image: url('svg/cross-svgrepo-com.svg');
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
+}
+input:checked  + label img {
+    width: 13em;
+    height: 100%;
 }
 .bayan-1:hover .bayan-title {
     height: auto;
@@ -79,11 +91,39 @@ input:checked + label .icon {
     color: #000;
     padding: 1em 2em 1em;
 }
+.bayan-1:hover img {
+    width: 13em;
+    height: 100%;
+}
+.bayan-1:active .bayan-title {
+    filter: blur(0.05em);
+    cursor: grabbing;
+}
+.bayan-1:active .head {
+    color: #8e8e8e;
+}
+.bayan-1:active .icon{
+    filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
+}
 .bayan-2:hover .bayan-title {
     height: auto;
     margin-top: -5px;
     color: #000;
     padding: 1em 2em 1em;
+}
+.bayan-2:hover img {
+    width: 13em;
+    height: 100%;
+}
+.bayan-2:active .bayan-title {
+    filter: blur(0.05em);
+    cursor: grabbing;
+}
+.bayan-2:active .head {
+    color: #8e8e8e;
+}
+.bayan-2:active .icon{
+    filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
 }
 .bayan-3:hover .bayan-title {
     height: auto;
@@ -91,11 +131,39 @@ input:checked + label .icon {
     color: #000;
     padding: 1em 2em 1em;
 }
+.bayan-3:hover img {
+    width: 13em;
+    height: 100%;
+}
+.bayan-3:active .bayan-title {
+    filter: blur(0.05em);
+    cursor: grabbing;
+}
+.bayan-3:active .head {
+    color: #8e8e8e;
+}
+.bayan-3:active .icon{
+    filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
+}
 .bayan-4:hover .bayan-title {
     height: auto;
     margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
+}
+.bayan-4:hover img {
+    width: 13em;
+    height: 100%;
+}
+.bayan-4:active .bayan-title {
+    filter: blur(0.05em);
+    cursor: grabbing;
+}
+.bayan-4:active .head {
+    color: #8e8e8e;
+}
+.bayan-4:active .icon{
+    filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
 }
 .bayan-5:hover .bayan-title {
     height: auto;
@@ -103,14 +171,27 @@ input:checked + label .icon {
     color: #000;
     padding: 1em 2em 1em;
 }
+.bayan-5:hover img {
+    width: 13em;
+    height: 100%;
+}
+.bayan-5:active .bayan-title {
+    filter: blur(0.05em);
+    cursor: grabbing;
+}
+.bayan-5:active .head {
+    color: #8e8e8e;
+}
+.bayan-5:active .icon{
+    filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
+}
 @media (max-width: 1270px) {
-    
     .bayan {
         margin: 1em 10em;
     }
     .bayan  label {
 
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
 }
@@ -121,7 +202,7 @@ input:checked + label .icon {
     }
     .bayan  label {
 
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
 }
