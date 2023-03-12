@@ -97,6 +97,20 @@ input:checked  + label img {
     .bayan-1:hover img {
         transform: scale(1);
     }
+    .bayan-1:hover .icon {
+        background-image: url('svg/cross-svgrepo-com.svg');
+    }
+    .bayan-2:hover .icon {
+        background-image: url('svg/cross-svgrepo-com.svg');
+    }
+    .bayan-3:hover .icon {
+        background-image: url('svg/cross-svgrepo-com.svg');
+    }
+    .bayan-4:hover .icon {
+        background-image: url('svg/cross-svgrepo-com.svg');
+    }.bayan-5:hover .icon {
+        background-image: url('svg/cross-svgrepo-com.svg');
+    }
     .bayan-2:hover .bayan-title {
         height: auto;
         color: #000;
