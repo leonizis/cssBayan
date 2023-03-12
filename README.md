@@ -3,7 +3,7 @@
 
 Скриншот: https://screenshare.ru/image/aaf42486-4dbf-4424-8fb5-15cfd9459fc7.png
 
-Развертывание: https://username.github.io/cssBayan/cssBayan/index.html
+Развертывание: https://leonizis.github.io/cssBayan/cssBayan/index.html
 
 Начало: 2023-03-10 03:00, окончание: 2023-03-13 02:59
 
