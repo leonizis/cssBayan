@@ -1,6 +1,8 @@
 
 .bayan {
-    margin: 1em 25em;
+    max-width: 45%;
+    margin: 2vw auto;
+
 }
 .bayan:hover .icon{
     visibility: visible;
@@ -38,7 +40,7 @@ img{
     justify-content:center;
 }
 .bayan .bayan-title p {
-    margin: 0 0 1em;
+    margin: 0 0 0.5em;
     cursor: pointer;
 }
 .bayan  label {
@@ -53,7 +55,7 @@ img{
     z-index: 100;
     font-family: Verdana, sans-serif;
     font-size: 1em;
-    margin: 0 0 0.5em;
+    border: 0.05em solid #ffffff;
     transition: color .35s;
 }
 label:hover {
@@ -187,7 +189,7 @@ input:checked  + label img {
 }
 @media (max-width: 1270px) {
     .bayan {
-        margin: 1em 10em;
+        max-width: 55%;;
     }
     .bayan  label {
 
@@ -196,9 +198,8 @@ input:checked  + label img {
 
 }
 @media (max-width: 819px) {
-    
     .bayan {
-        margin: 1em 1em;
+        max-width: 65%;;
     }
     .bayan  label {
 
@@ -209,7 +210,7 @@ input:checked  + label img {
 @media (max-width: 500px) {
 
     .bayan {
-        margin: 1em 1em;
+        max-width: 70%;
     }
     .bayan  label {
 
