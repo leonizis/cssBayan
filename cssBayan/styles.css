@@ -1,4 +1,3 @@
-
 .bayan {
     max-width: 45%;
     margin: 2vw auto;
@@ -6,6 +5,9 @@
 }
 .bayan:hover .icon{
     visibility: visible;
+}
+.bayan:hover .head{
+    color: bisque;
 }
 .headings{
     display: flex;
@@ -25,10 +27,8 @@
 }
 img{
     width: 13em;
-    width: 0;
-    height: 0;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-    overflow: hidden;
+    transform: scale(0);
+    transition: all 0.5s ease;
 }
 
 .bayan .bayan-title {
@@ -69,12 +69,11 @@ input{
 }
 input:checked + label {
     background-color: #acacac;
-    color: #FFF;
+    color: bisque;
 }
 
 input:checked + label  .bayan-title {
     height: auto;
-    margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
 }
@@ -86,18 +85,17 @@ input:checked + label .icon {
 input:checked  + label img {
     width: 13em;
     height: 100%;
+    transform: scale(1);
 }
 .bayan-1:hover .bayan-title {
     height: auto;
-    margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
 }
 .bayan-1:hover img {
-    width: 13em;
-    height: 100%;
+    transform: scale(1);
 }
-.bayan-1:active .bayan-title {
+.bayan:active .bayan-title {
     filter: blur(0.05em);
     cursor: grabbing;
 }
@@ -109,18 +107,13 @@ input:checked  + label img {
 }
 .bayan-2:hover .bayan-title {
     height: auto;
-    margin-top: -5px;
     color: #000;
     padding: 1em 2em 1em;
 }
 .bayan-2:hover img {
-    width: 13em;
-    height: 100%;
+    transform: scale(1);
 }
-.bayan-2:active .bayan-title {
-    filter: blur(0.05em);
-    cursor: grabbing;
-}
+
 .bayan-2:active .head {
     color: #8e8e8e;
 }
@@ -129,18 +122,13 @@ input:checked  + label img {
 }
 .bayan-3:hover .bayan-title {
     height: auto;
-    margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
 }
 .bayan-3:hover img {
-    width: 13em;
-    height: 100%;
+    transform: scale(1);
 }
-.bayan-3:active .bayan-title {
-    filter: blur(0.05em);
-    cursor: grabbing;
-}
+
 .bayan-3:active .head {
     color: #8e8e8e;
 }
@@ -149,18 +137,13 @@ input:checked  + label img {
 }
 .bayan-4:hover .bayan-title {
     height: auto;
-    margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
 }
 .bayan-4:hover img {
-    width: 13em;
-    height: 100%;
+    transform: scale(1);
 }
-.bayan-4:active .bayan-title {
-    filter: blur(0.05em);
-    cursor: grabbing;
-}
+
 .bayan-4:active .head {
     color: #8e8e8e;
 }
@@ -169,18 +152,13 @@ input:checked  + label img {
 }
 .bayan-5:hover .bayan-title {
     height: auto;
-    margin-top: -0.5em;
     color: #000;
     padding: 1em 2em 1em;
 }
 .bayan-5:hover img {
-    width: 13em;
-    height: 100%;
+    transform: scale(1);
 }
-.bayan-5:active .bayan-title {
-    filter: blur(0.05em);
-    cursor: grabbing;
-}
+
 .bayan-5:active .head {
     color: #8e8e8e;
 }
