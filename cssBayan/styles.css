@@ -3,12 +3,6 @@
     margin: 2vw auto;
 
 }
-.bayan:hover .icon{
-    visibility: visible;
-}
-.bayan:hover .head{
-    color: bisque;
-}
 .headings{
     display: flex;
     justify-content: space-between;
@@ -58,12 +52,7 @@ img{
     border: 0.05em solid #ffffff;
     transition: color .35s;
 }
-label:hover {
-    color: #bcbcbc;
-}
-.bayan:hover .icon {
-    opacity: 1;
-}
+
 input{
     display: none;
 }
@@ -87,14 +76,61 @@ input:checked  + label img {
     height: 100%;
     transform: scale(1);
 }
-.bayan-1:hover .bayan-title {
-    height: auto;
-    color: #000;
-    padding: 1em 2em 1em;
-}
-.bayan-1:hover img {
-    transform: scale(1);
-}
+@media (hover: hover) {
+    .bayan:hover .icon{
+        visibility: visible;
+    }
+    .bayan:hover .head{
+        color: bisque;
+    }
+    label:hover {
+        color: #bcbcbc;
+    }
+    .bayan:hover .icon {
+        opacity: 1;
+    }
+    .bayan-1:hover .bayan-title {
+        height: auto;
+        color: #000;
+        padding: 1em 2em 1em;
+    }
+    .bayan-1:hover img {
+        transform: scale(1);
+    }
+    .bayan-2:hover .bayan-title {
+        height: auto;
+        color: #000;
+        padding: 1em 2em 1em;
+    }
+    .bayan-2:hover img {
+        transform: scale(1);
+    }
+    .bayan-3:hover .bayan-title {
+        height: auto;
+        color: #000;
+        padding: 1em 2em 1em;
+    }
+    .bayan-3:hover img {
+        transform: scale(1);
+    }
+    .bayan-4:hover .bayan-title {
+        height: auto;
+        color: #000;
+        padding: 1em 2em 1em;
+    }
+    .bayan-4:hover img {
+        transform: scale(1);
+    }
+    .bayan-5:hover .bayan-title {
+        height: auto;
+        color: #000;
+        padding: 1em 2em 1em;
+    }
+    .bayan-5:hover img {
+        transform: scale(1);
+    }
+  }
+
 .bayan:active .bayan-title {
     filter: blur(0.05em);
     cursor: grabbing;
@@ -105,14 +141,7 @@ input:checked  + label img {
 .bayan-1:active .icon{
     filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
 }
-.bayan-2:hover .bayan-title {
-    height: auto;
-    color: #000;
-    padding: 1em 2em 1em;
-}
-.bayan-2:hover img {
-    transform: scale(1);
-}
+
 
 .bayan-2:active .head {
     color: #8e8e8e;
@@ -120,14 +149,7 @@ input:checked  + label img {
 .bayan-2:active .icon{
     filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
 }
-.bayan-3:hover .bayan-title {
-    height: auto;
-    color: #000;
-    padding: 1em 2em 1em;
-}
-.bayan-3:hover img {
-    transform: scale(1);
-}
+
 
 .bayan-3:active .head {
     color: #8e8e8e;
@@ -135,28 +157,13 @@ input:checked  + label img {
 .bayan-3:active .icon{
     filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
 }
-.bayan-4:hover .bayan-title {
-    height: auto;
-    color: #000;
-    padding: 1em 2em 1em;
-}
-.bayan-4:hover img {
-    transform: scale(1);
-}
+
 
 .bayan-4:active .head {
     color: #8e8e8e;
 }
 .bayan-4:active .icon{
     filter: invert(55%) sepia(12%) saturate(14%) hue-rotate(66deg) brightness(101%) contrast(90%);
-}
-.bayan-5:hover .bayan-title {
-    height: auto;
-    color: #000;
-    padding: 1em 2em 1em;
-}
-.bayan-5:hover img {
-    transform: scale(1);
 }
 
 .bayan-5:active .head {
